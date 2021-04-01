@@ -1,31 +1,215 @@
 <!DOCTYPE html>
-<html lang="en" dir="ltr">
-  <head>
+
+<html>
+    <head>
         <meta charset="utf-8">
-        <title>Press For Earth</title>
-        <link rel="stylesheet" href="../PressForEarth/Stylesheets/stylesheet1.css">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Portfolio Site</title>
+        <meta name="description" content="Portfolio site">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="/Stylesheets/CSS/styles.css">
 
-      <header role="banner" class="heroimg">
-          <div class='headerContainer'>
-                  <div class="header-content">
-                       <h1 class='title'>Press For Earth</h1> <br>
+        <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro:400,900|Source+Sans+Pro:300,900&display=swap" rel="stylesheet">
+        <script src="https://kit.fontawesome.com/41ba69b621.js" crossorigin="anonymous"></script>
+
+
+
+
+    </head>
+    <body>
+        <!-- Header -->
+        <header>
+           
+
+            <button class="nav-toggle" aria-label="toggle navigation">
+                <span class="hamburger"></span>
+            </button>
+
+            <nav class="nav">
+                <ul class="nav__list">
+                    <li class="nav__item">
+                        <a href="#" class="nav__link">Home</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#about" class="nav__link">About Me</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#articles" class="nav__link">Articles</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#my-videos" class="nav__link">Videos</a>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+
+        <!-- Introduction Section -->
+        <section class="intro" id="home">
+            <h1 class="section__title section__title--intro">
+                Press For <strong>Earth</strong>
+            </h1>
+            <p class="section__subtitle section__subtitle--intro">Independent Media, Redefined</p>
+            <img src="/Assets/15873101_1209524712447367_4071038848524017983_n.png" class="intro__img">
+        </section>
+
+
+
+        <!-- My articles Section -->
+        <section class="my-articles" id="articles">
+            <h2 class="section__title section__title--articles">Recent News</h2>
+            <div class="articles">
+                    <div class="service">
+                        <h3>Local News</h3>
+                          <img src="/Assets/Placeholder.jpg">
+                    </div> <!-- <-- Closing tag for service class-->
+
+                    <div class="service">
+                        <h3>International News</h3>
+                          <img src="/Assets/Placeholder.jpg">
+                    
+
+                    </div> <!-- <-- Closing tag for service class-->
+
+                    <div class="service">
+                        <h3>Trending News</h3>
+                         <img src="/Assets/Placeholder.jpg">
+
+                    </div> <!-- <-- Closing tag for service class-->
+            </div> <!-- Closing tag for articles class  (container) -->
+
+            <a href="#my-articles" class="btn">work</a>
+        </section>
+
+        <!-- About me section -->
+        <section class="about-me" id="about">
+            <h2 class="section__title section__title--about" id="about-me">What we do</h2>
+            <p class="section__subtitle section__subtitle--about">The next generation of media </p>
+
+            <div class="about-me__body">
+                <p>
+                    My name is Kyle LeBlanc and I am a self taught developer currently living in Ottawa Ontario. I have been toying with the idea of becoming a      developer for many years without a real commitment. I started college right out of high school for video game development but didn't complete it due to financial issues among others. To be completely honest, I wasn't ready right out of school I realize now. 
+                </p>
+                <p>
+                    Since that time, I have spent my time learning new skills that would allow me to enter a career in the technology sector. I have considered going back to college to receive a computer science degree, however I am an excellent self taught learner, and while I believe it would be a good investment. I believe that I can achieve my goals without it, by demonstrating my dedication, learning abilities to acquire additional skills or languages, and my passion for creating things that matter to peoples lives. 
+                </p>
+            </div>
+
+            <img src="/Assets/PFEBanner.jpg" class="about-me__img1">
+            <img src="/Assets/PFE-Youtube-Videos-Screenshot02.PNG" class="about-me__img2">
+
+
+        </section>
+        
+
+            <!-- My videos -->
+            <section class="my-videos" id="my-videos">
+              <h2 class="section__title section__title--work">My Videos</h2>
+              <p class="section__subtitle section__subtitle--work">Video Archive</p>
+  
+              <div class="videos">
+                  <!-- videos Item 01 -->
+                  <div class="videos__container">
+                      <h4>Iran 30kg away from producing a Nuclear Weapon</h2>
+                      <a href="https://www.youtube.com/watch?v=w_iqZNfcINQ" class=videos__item> 
+                        <img src="/Assets/Placeholder.jpg" class="videos__img">
+                      </a>
                   </div>
-                       <h3 class='titlesubtitle'>Independent Media ; For A New Generation</h3>
-          </div>
-         
-      </header>
-  </head>
+                  
+                  <!-- videos Item 02 -->
+                  <div class="videos__container">
+                      <h4>Pete Buttigieg DROPS OUT of 2020 pres race</h3>
+                      <a href="https://www.youtube.com/watch?v=swmEqVMd2rk" class=videos__item>
+                        <img src="/Assets/Placeholder.jpg" class="videos__img">
+                      </a>
+                  </div>
+                  
+                  <!-- videos Item 03 -->
+                  <div class="videos__container">
+                      <h4>Viral Challenge causing injuries as expected</h3>
+                      <a href="https://www.youtube.com/watch?v=swmEqVMd2rk" class=videos__item>
+                        <img src="/Assets/Placeholder.jpg" class="videos__img">
+                      </a>
+                </div>
+                
+                  <!-- videos Item 04 -->
+                  <div class="videos__container">
+                      <h4>"We Must prepare for a pandemic" WHO Says</h3>
+                      <a href="https://www.youtube.com/watch?v=swmEqVMd2rk" class=videos__item>
+                        <img src="/Assets/Placeholder.jpg" class="videos__img">
+                      </a>
+                  </div>
 
+                         <!-- videos Item 01 -->
+                         <div class="videos__container">
+                          <h4>Iran 30kg away from producing a Nuclear Weapon</h2>
+                          <a href="https://www.youtube.com/watch?v=w_iqZNfcINQ" class=videos__item> 
+                            <img src="/Assets/Placeholder.jpg" class="videos__img">
+                          </a>
+                      </div>
+                      
+                      <!-- videos Item 02 -->
+                      <div class="videos__container">
+                          <h4>Pete Buttigieg DROPS OUT of 2020 pres race</h3>
+                          <a href="https://www.youtube.com/watch?v=swmEqVMd2rk" class=videos__item>
+                            <img src="/Assets/Placeholder.jpg" class="videos__img">
+                          </a>
+                      </div>
+                      
+                      <!-- videos Item 03 -->
+                      <div class="videos__container">
+                          <h4>Viral Challenge causing injuries as expected</h3>
+                          <a href="https://www.youtube.com/watch?v=swmEqVMd2rk" class=videos__item>
+                            <img src="/Assets/Placeholder.jpg" class="videos__img">
+                          </a>
+                    </div>
+                    
+                      <!-- videos Item 04 -->
+                      <div class="videos__container">
+                          <h4>"We Must prepare for a pandemic" WHO Says</h3>
+                          <a href="https://www.youtube.com/watch?v=swmEqVMd2rk" class=videos__item>
+                            <img src="/Assets/Placeholder.jpg" class="videos__img">
+                          </a>
+                      </div>
+            </div>
 
-  <body>
+              <button>See full archive</button>
+
+          </section>
   
 
+        <!-- Footer -->
+        <footer class="footer">
+            <a href="mailto:kyle.leblanc88@gmail.com" class="footer__link">Kyle.LeBlanc88@gmail.com </a>
+            <ul class="social-list">
+                <li class="social-list__item">
+                    <a class="social-list__link" href="https://www.github.com">
+                        <i class="fab fa-github"></i>
+                    </a>
+                </li>
+                <li class="social-list__item">
+                    <a class="social-list__link">
+                        <i class="fab fa-twitter"></i>
+                    </a>
+                </li>
+                <!-- CHANGE ME BEFORE PUBLISHING !! ADD LINKS TO THE HREFS-->
+                <li class="social-list__item">
+                    <a class="social-list__link">
+                        <i class="fab fa-linkedin"></i>
+                    </a>
+                </li>
+                <!-- CHANGE ME BEFORE PUBLISHING !! ADD LINKS TO THE HREFS-->
+                <li class="social-list__item">
+                    <a class="social-list__link">
+                        <i class="fab fa-instagram-square"></i>
+                    </a>
+                </li>
+                <!-- CHANGE ME BEFORE PUBLISHING !! ADD LINKS TO THE HREFS-->
+          
+            </ul>
+        </footer>
 
-
-
-      <div class="footer">
-          <p>Footer</p>
-            <input type="button" name="Button1" value="Click Here" onClick="msg()">
-      </div>
-  </body>
+        <script src="/Scripts/index.js"></script>
+      
+        </script>
+    </body>
 </html>
