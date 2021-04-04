@@ -4,13 +4,14 @@
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title>Portfolio Site</title>
+        <title>Press For Earth</title>
         <meta name="description" content="Portfolio site">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="/Stylesheets/CSS/styles.css">
 
         <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro:400,900|Source+Sans+Pro:300,900&display=swap" rel="stylesheet">
         <script src="https://kit.fontawesome.com/41ba69b621.js" crossorigin="anonymous"></script>
+        <script src="/Scripts/index.js"></script>
 
 
 
@@ -19,37 +20,38 @@
     <body>
         <!-- Header -->
         <header>
-           
+          <div class="topnav" id="myTopnav">
+            <a href="#" class="active">Home</a>
+            <a href="#about-me">About Us</a>
+            <a href="#contact">Contact</a>
+            <div class="dropdown">
+              <button class="dropbtn">News
+                <i class="fa fa-caret-down"></i>
+              </button>
+              <div class="dropdown-content">
+                <a href="#">Local News</a>
+                <a href="#">International News</a>
+                <a href="#">Trending News</a>
+              </div>
+            </div>
+            <a href="#about">About</a>
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()">&#9776;</a>
+          </div>
 
-            <button class="nav-toggle" aria-label="toggle navigation">
-                <span class="hamburger"></span>
-            </button>
-
-            <nav class="nav">
-                <ul class="nav__list">
-                    <li class="nav__item">
-                        <a href="#" class="nav__link">Home</a>
-                    </li>
-                    <li class="nav__item">
-                        <a href="#about" class="nav__link">About Me</a>
-                    </li>
-                    <li class="nav__item">
-                        <a href="#articles" class="nav__link">Articles</a>
-                    </li>
-                    <li class="nav__item">
-                        <a href="#my-videos" class="nav__link">Videos</a>
-                    </li>
-                </ul>
-            </nav>
         </header>
 
         <!-- Introduction Section -->
-        <section class="intro" id="home">
-            <h1 class="section__title section__title--intro">
-                Press For <strong>Earth</strong>
-            </h1>
-            <p class="section__subtitle section__subtitle--intro">Independent Media, Redefined</p>
-            <img src="/Assets/15873101_1209524712447367_4071038848524017983_n.png" class="intro__img">
+        <section class="intro" id="home"> 
+            <div class="hero-image">
+              <div class="hero-text">
+                  <h1 class="section__title section__title--intro div1">
+                  Press For Earth
+                  </h1>
+                  <p class="section__subtitle div2 section__subtitle--intro">Independent Media, Redefined</p>
+                  
+              </div>
+                <img class="hero-img" src="/Assets/news-photo1.jpg">
+            </div>
         </section>
 
 
@@ -58,23 +60,20 @@
         <section class="my-articles" id="articles">
             <h2 class="section__title section__title--articles">Recent News</h2>
             <div class="articles">
-                    <div class="service">
+                    <div class="article article01">
                         <h3>Local News</h3>
-                          <img src="/Assets/Placeholder.jpg">
-                    </div> <!-- <-- Closing tag for service class-->
+                          <img src="/Assets/pexels-rodnae-productions-6257070.jpg" class="article__img1 article__img">
+                    </div> <!-- <-- Closing tag for article class-->
 
-                    <div class="service">
+                    <div class="article article02">
                         <h3>International News</h3>
-                          <img src="/Assets/Placeholder.jpg">
-                    
+                          <img src="/Assets/news-stock-photo.jpg" class="article__img2 article__img">
+                    </div> <!-- <-- Closing tag for article class-->
 
-                    </div> <!-- <-- Closing tag for service class-->
-
-                    <div class="service">
+                    <div class="article article03">
                         <h3>Trending News</h3>
-                         <img src="/Assets/Placeholder.jpg">
-
-                    </div> <!-- <-- Closing tag for service class-->
+                         <img src="/Assets/news-stock-photo.jpg" class="article__img3 article__img">
+                    </div> <!-- <-- Closing tag for article class-->
             </div> <!-- Closing tag for articles class  (container) -->
 
             <a href="#my-articles" class="btn">work</a>
@@ -87,10 +86,11 @@
 
             <div class="about-me__body">
                 <p>
-                    My name is Kyle LeBlanc and I am a self taught developer currently living in Ottawa Ontario. I have been toying with the idea of becoming a      developer for many years without a real commitment. I started college right out of high school for video game development but didn't complete it due to financial issues among others. To be completely honest, I wasn't ready right out of school I realize now. 
+                    Press For Earth is my concept of becoming the change I wish to see in media. The division we see in today's political climate is incredibly worrying. Press For Earth is my effort to add my voice to the conversation, and build a political empire that will allow the voices of the voiceless the echo through our world, to provide a megaphone for the people that right now, are not being heard. 
                 </p>
                 <p>
-                    Since that time, I have spent my time learning new skills that would allow me to enter a career in the technology sector. I have considered going back to college to receive a computer science degree, however I am an excellent self taught learner, and while I believe it would be a good investment. I believe that I can achieve my goals without it, by demonstrating my dedication, learning abilities to acquire additional skills or languages, and my passion for creating things that matter to peoples lives. 
+                   <strong>In the age of information, ignorance is a choice</strong> <br>
+                   I believe in this statement. We now live in an era where information is abundant. However that leads to some issues itself. In the early years of the internet Ray Kursweil, now Chief engineer at Google, predicted that with the massive expansion of the internet, and the shear amount of data available, we would need search engines to filter this data. He was obviously correct. However, we now have a massive distrust of tech compan 
                 </p>
             </div>
 
@@ -102,74 +102,69 @@
         
 
             <!-- My videos -->
-            <section class="my-videos" id="my-videos">
+          <section class="my-videos" id="my-videos">
               <h2 class="section__title section__title--work">My Videos</h2>
               <p class="section__subtitle section__subtitle--work">Video Archive</p>
   
               <div class="videos">
                   <!-- videos Item 01 -->
                   <div class="videos__container">
-                      <h4>Iran 30kg away from producing a Nuclear Weapon</h2>
-                      <a href="https://www.youtube.com/watch?v=w_iqZNfcINQ" class=videos__item> 
-                        <img src="/Assets/Placeholder.jpg" class="videos__img">
-                      </a>
+                      <h4>Iran 30kg away from a Nuclear Weapon</h2>
+                        <iframe width="413" height="408" src="https://www.youtube.com/embed/w_iqZNfcINQ?list=TLPQMDQwNDIwMjGwIeX8aO66fQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                   </div>
                   
                   <!-- videos Item 02 -->
                   <div class="videos__container">
                       <h4>Pete Buttigieg DROPS OUT of 2020 pres race</h3>
-                      <a href="https://www.youtube.com/watch?v=swmEqVMd2rk" class=videos__item>
-                        <img src="/Assets/Placeholder.jpg" class="videos__img">
-                      </a>
+                        <iframe width="413" height="408" src="https://www.youtube.com/embed/swmEqVMd2rk?list=TLPQMDQwNDIwMjGwIeX8aO66fQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                   </div>
                   
                   <!-- videos Item 03 -->
                   <div class="videos__container">
                       <h4>Viral Challenge causing injuries as expected</h3>
-                      <a href="https://www.youtube.com/watch?v=swmEqVMd2rk" class=videos__item>
-                        <img src="/Assets/Placeholder.jpg" class="videos__img">
-                      </a>
+                        <iframe width="413" height="408" src="https://www.youtube.com/embed/YT_mvG7PFPs?list=TLPQMDQwNDIwMjGwIeX8aO66fQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                 </div>
                 
                   <!-- videos Item 04 -->
                   <div class="videos__container">
                       <h4>"We Must prepare for a pandemic" WHO Says</h3>
-                      <a href="https://www.youtube.com/watch?v=swmEqVMd2rk" class=videos__item>
-                        <img src="/Assets/Placeholder.jpg" class="videos__img">
-                      </a>
+                        <iframe width="413" height="408" src="https://www.youtube.com/embed/0R74NdNDDc0?list=TLPQMDQwNDIwMjGwIeX8aO66fQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                   </div>
 
                          <!-- videos Item 01 -->
                          <div class="videos__container">
-                          <h4>Iran 30kg away from producing a Nuclear Weapon</h2>
-                          <a href="https://www.youtube.com/watch?v=w_iqZNfcINQ" class=videos__item> 
-                            <img src="/Assets/Placeholder.jpg" class="videos__img">
-                          </a>
+                          <h4>Turkey Retaliates after Syrian gov Shelling</h2>
+                            <iframe width="413" height="408" src="https://www.youtube.com/embed/oKfDHzcR5eI?list=TLPQMDQwNDIwMjGwIeX8aO66fQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                       </div>
                       
                       <!-- videos Item 02 -->
                       <div class="videos__container">
-                          <h4>Pete Buttigieg DROPS OUT of 2020 pres race</h3>
-                          <a href="https://www.youtube.com/watch?v=swmEqVMd2rk" class=videos__item>
-                            <img src="/Assets/Placeholder.jpg" class="videos__img">
-                          </a>
+                          <h4>White Supremacist Arrested plotting attack</h3>
+                            <iframe width="413" height="408" src="https://www.youtube.com/embed/9Reg04z2sAE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                       </div>
                       
                       <!-- videos Item 03 -->
                       <div class="videos__container">
-                          <h4>Viral Challenge causing injuries as expected</h3>
-                          <a href="https://www.youtube.com/watch?v=swmEqVMd2rk" class=videos__item>
-                            <img src="/Assets/Placeholder.jpg" class="videos__img">
-                          </a>
+                          <h4>(old)Covid19 hits 1000+ Deaths & 42,000 </h3>
+                            <iframe width="413" height="408" src="https://www.youtube.com/embed/ATOfO_51w6Q" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                     </div>
                     
                       <!-- videos Item 04 -->
                       <div class="videos__container">
                           <h4>"We Must prepare for a pandemic" WHO Says</h3>
-                          <a href="https://www.youtube.com/watch?v=swmEqVMd2rk" class=videos__item>
-                            <img src="/Assets/Placeholder.jpg" class="videos__img">
-                          </a>
+                            <iframe width="413" height="408" src="https://www.youtube.com/embed/ysKZRGqbjBA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                       </div>
+                      <div class="videos__container">
+                        <h4>"We Must prepare for a pandemic" WHO Says</h3>
+                          <iframe width="413" height="408" src="https://www.youtube.com/embed/CLpDo-_ZMkg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </div>
+                    <div class="videos__container">
+                      <h4>"We Must prepare for a pandemic" WHO Says</h3>
+                        <iframe width="413" height="408" src="https://www.youtube.com/embed/nsvA9ISYs7s" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                  </div>
+
+
+
             </div>
 
               <button>See full archive</button>
@@ -181,6 +176,13 @@
         <footer class="footer">
             <a href="mailto:kyle.leblanc88@gmail.com" class="footer__link">Kyle.LeBlanc88@gmail.com </a>
             <ul class="social-list">
+
+                <li class="footer__jobs">
+                  <div class="footer__jobs--links">
+                      <a href="jobs.html">Join the team !</a>
+                  </div>
+              </li>
+
                 <li class="social-list__item">
                     <a class="social-list__link" href="https://www.github.com">
                         <i class="fab fa-github"></i>
@@ -204,11 +206,13 @@
                     </a>
                 </li>
                 <!-- CHANGE ME BEFORE PUBLISHING !! ADD LINKS TO THE HREFS-->
+
+
+                
           
             </ul>
         </footer>
 
-        <script src="/Scripts/index.js"></script>
       
         </script>
     </body>
